@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường Đại học CNTT và Truyền thông</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<div class="grid-container">
+    <header class="header">
+        <div class="container header-content">
+
+            <div class="logo">
+                <img src="./img/logo-dai-hoc.jpg" alt="Logo ICTU">
+                <div>
+                    <p>ĐẠI HỌC THÁI NGUYÊN</p>
+                    <b>TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN VÀ TRUYỀN THÔNG</b>
+                </div>
+            </div>
+            <div class="social">
+                <a href="#">f</a>
+                <a href="#">▶</a>
+                <a href="#">♪</a>
+                <a href="#">EN</a>
+            </div>
+
+        </div>
+    </header>
+    <nav class="menu">
+        <div class="container menu-content">
+            <a href="#gioithieu">GIỚI THIỆU</a>
+            <a href="#daotao">ĐÀO TẠO</a>
+            <a href="#khoahoc">KHOA HỌC CÔNG NGHỆ</a>
+            <a href="#hoptac">HỢP TÁC QUỐC TẾ</a>
+            <a href="#tuyensinh">TUYỂN SINH</a>
+            <a href="#sinhvien">SINH VIÊN</a>
+            <a href="#baocongkhai">BA CÔNG KHAI</a>
+            <a href="#ictat">ICTAT 2026</a>
+            <a href="#">⌕</a>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="slider banner-slider">
+
+            <img class="slide active" src="./img/banner_-hoatdongsinhvien-scaled.jpg" alt="Banner 1">
+            <img class="slide" src="./img/banner2.jpg" alt="Banner 2">
+            <img class="slide" src="./img/banner3.png" alt="Banner 3">
+            <img class="slide" src="./img/banner4.jpg" alt="Banner 4">
+
+            <button class="prev" onclick="changeSlide('banner-slider', -1)">&#10094;</button>
+            <button class="next" onclick="changeSlide('banner-slider', 1)">&#10095;</button>
+
+            <div class="dots">
+                <span class="dot active" onclick="showSlide('banner-slider', 0)"></span>
+                <span class="dot" onclick="showSlide('banner-slider', 1)"></span>
+                <span class="dot" onclick="showSlide('banner-slider', 2)"></span>
+                <span class="dot" onclick="showSlide('banner-slider', 3)"></span>
+            </div>
+        </div>
+
+        <section class="development container" id="gioithieu">
+            <h2>CHẶNG ĐƯỜNG PHÁT TRIỂN</h2>
+            <div class="line"></div>
+            <div class="development-content">
+                <div class="slider development-slider">
+                    <img class="slide active" src="./img/phattrien1.jpg" alt="Phát triển 1">
+                    <img class="slide" src="./img/phattrien2.jpg" alt="Phát triển 2">
+                    <img class="slide" src="./img/phattrien3.jpg" alt="Phát triển 3">
+                    <img class="slide" src="./img/phattrien4.jpg" alt="Phát triển 4">
+
+                    <button class="prev" onclick="changeSlide('development-slider', -1)">&#10094;</button>
+                    <button class="next" onclick="changeSlide('development-slider', 1)">&#10095;</button>
+
+                    <div class="dots">
+                        <span class="dot active" onclick="showSlide('development-slider', 0)"></span>
+                        <span class="dot" onclick="showSlide('development-slider', 1)"></span>
+                        <span class="dot" onclick="showSlide('development-slider', 2)"></span>
+                        <span class="dot" onclick="showSlide('development-slider', 3)"></span>
+                    </div>
+                </div>
+                <div class="development-info">
+                    <h2>2025</h2>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-icon">🎓</span>
+                            <div>
+                                <h3>100%</h3>
+                                <p>CBGV trình độ cao</p>
+                            </div>
+                        </div>
+
+                        <div class="stat-box">
+                            <span class="stat-icon">📚</span>
+                            <div>
+                                <h3>87.413</h3>
+                                <p>Diện tích sàn XD</p>
+                            </div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-icon">🏫</span>
+                            <div>
+                                <h3>27</h3>
+                                <p>Ngành đào tạo</p>
+                            </div>
+                        </div>
+
+                        <div class="stat-box">
+                            <span class="stat-icon">👥</span>
+                            <div>
+                                <h3>&gt; 10.000</h3>
+                                <p>Quy mô đào tạo ĐHCQ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="year">2001</div>
+                <div class="year">2005</div>
+                <div class="year">2011</div>
+                <div class="year">2015</div>
+                <div class="year">2021</div>
+                <div class="year active">2025</div>
+            </div>
+            <div class="small-banners">
+                <img src="./img/tuyensinh.png" alt="Tuyển sinh">
+                <img src="./img/steam-ai.png" alt="STEAM và AI">
+                <img src="./img/hoi thao.png" alt="Hội thảo">
+                <img src="./img/welcome icta.png" alt="ICTAT 2026">
+            </div>
+        </section>
+    </main>
+    <section class="facts" id="tintuc">
+        <div class="container">
+            <h2>TIN TỨC - SỰ KIỆN</h2>
+            <div class="line"></div>
+
+            <div class="news-layout">
+                <div class="news-grid">
+                    <div class="news-card">
+                        <img src="./img/sukien1.jpg" alt="Tin tức 1">
+                        <h3>
+                            <a href="#">
+                                Ấn tượng với không khí sôi động,
+                                trẻ trung của chuỗi sự kiện
+                                IFEST 2025 tại ICTU
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="news-card">
+                        <img src="./img/sukien2.jpeg" alt="Tin tức 2">
+                        <h3>
+                            <a href="#">
+                                ICTU và Đại học Quốc gia Hà Nội
+                                đồng tổ chức Hội thảo khoa học
+                                quốc tế ICTAT 2025
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="news-card">
+                        <img src="./img/sukien3.jpeg" alt="Tin tức 3">
+                        <h3>
+                            <a href="#">
+                                ICTU - Trường đại học duy nhất
+                                giành cú đúp giải thưởng
+                                Sao Khuê 2025
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="news-card">
+                        <img src="./img/sukien4.jpg" alt="Tin tức 4">
+                        <h3>
+                            <a href="#">
+                                OPEN STEAM DAY: Khơi dậy
+                                đam mê khám phá công nghệ
+                                cho học sinh
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="news-list">
+
+                    <div class="news-item">
+                        <div class="date">
+                            <small>THÁNG 6</small>
+                            <b>18</b>
+                        </div>
+                        <div>
+                            <a href="#">
+                                Open Stem Day 2026: Kết nối 50
+                                trường THPT, khơi dậy đam mê
+                                khoa học và sáng tạo công nghệ
+                            </a>
+                            <p>
+                                Trường Đại học Công nghệ Thông tin
+                                và Truyền thông tổ chức chương trình...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="date">
+                            <small>THÁNG 6</small>
+                            <b>13</b>
+                        </div>
+                        <div>
+                            <a href="#">
+                                Trường Đại học Công nghệ Thông tin
+                                và Truyền thông chúc mừng
+                                ngày Doanh nhân Việt Nam
+                            </a>
+                            <p>
+                                Những hoạt động nổi bật và
+                                sự kiện của nhà trường...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="date">
+                            <small>THÁNG 6</small>
+                            <b>10</b>
+                        </div>
+                        <div>
+                            <a href="#">
+                                ICTU và NTU ký kết hợp tác:
+                                Mở rộng kết nối học thuật
+                                và nghiên cứu khoa học quốc tế
+                            </a>
+                            <p>
+                                Tăng cường hợp tác trong đào tạo,
+                                nghiên cứu và chuyển giao công nghệ...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="date">
+                            <small>THÁNG 6</small>
+                            <b>23</b>
+                        </div>
+                        <div>
+                            <a href="#">
+                                COLOURFUL ICTU 2026 -
+                                Những sắc màu văn hóa cùng hội tụ
+                                trong môi trường học tập
+                            </a>
+                            <p>
+                                Chương trình giao lưu văn hóa
+                                dành cho sinh viên quốc tế...
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="more">
+                <a href="#">Xem thêm</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+
+        <div class="container">
+            <h2>TẦM NHÌN - SỨ MỆNH</h2>
+            <div class="line"></div>
+
+            <div class="footer-grid">
+                <div class="footer-card">
+                    <img src="./img/tamnhin.jpg" alt="Tầm nhìn">
+                    <h3>TẦM NHÌN</h3>
+                </div>
+
+                <div class="footer-card">
+                    <img src="./img/su mang.jpg" alt="Sứ mạng">
+                    <h3>SỨ MẠNG</h3>
+                </div>
+
+                <div class="footer-card">
+                    <img src="./img/gia tri.jpg" alt="Giá trị cốt lõi">
+                    <h3>GIÁ TRỊ CỐT LÕI</h3>
+                </div>
+
+                <div class="footer-card">
+                    <img src="./img/giao duc.jpg" alt="Triết lý giáo dục">
+                    <h3>TRIẾT LÝ GIÁO DỤC</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- THANH ĐIỀU HƯỚNG MOBILE -->
+<div class="mobile-nav">
+
+    <a href="#">
+        <span>⌂</span>
+        Trang chủ
+    </a>
+
+    <a href="#tintuc">
+        <span>⌕</span>
+        Tìm kiếm
+    </a>
+
+    <a href="#" onclick="toggleMobileMenu(); return false;">
+        <span>☰</span>
+        Menu
+    </a>
+
+</div>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#gioithieu">GIỚI THIỆU</a>
+    <a href="#daotao">ĐÀO TẠO</a>
+    <a href="#khoahoc">KHOA HỌC CÔNG NGHỆ</a>
+    <a href="#hoptac">HỢP TÁC QUỐC TẾ</a>
+    <a href="#tuyensinh">TUYỂN SINH</a>
+    <a href="#sinhvien">SINH VIÊN</a>
+    <a href="#baocongkhai">BA CÔNG KHAI</a>
+    <a href="#ictat">ICTAT 2026</a>
+</div>
+
+<script src="./thjv.js"></script>
+
+</body>
+</html>
